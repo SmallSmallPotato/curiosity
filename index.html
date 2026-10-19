@@ -179,7 +179,7 @@ html, body {
   
   width: 100% !important;
   max-width: 800px !important;
-  padding: 12px 12px !important;
+  padding: 18px 18px !important;
   box-sizing: border-box !important;
   margin: 0 auto !important;
   
@@ -470,18 +470,18 @@ button, .passage a, input[type="submit"], .passage .macro-button {
 }
 
 /* 19世紀復古魔導書/博物誌風格 */
-.博物誌-container {
+.curiosity-container {
   background-color: #f4ecd8;
   color: #2b221e;
   padding: 30px;
   border: 4px double #5c4033;
   font-family: "Georgia", "STSong", "Songti SC", serif;
-  max-width: 850px;
+  max-width: 800px;
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-.博物誌-title {
+.curiosity-title {
   text-align: center;
   font-size: 2.2em;
   color: #4a2511;
@@ -489,14 +489,14 @@ button, .passage a, input[type="submit"], .passage .macro-button {
   letter-spacing: 2px;
 }
 
-.博物誌-subtitle {
+.curiosity-subtitle {
   text-align: center;
   font-style: italic;
   color: #6b5344;
   margin-bottom: 20px;
 }
 
-.博物誌-divider {
+.curiosity-divider {
   border: none;
   border-top: 2px solid #8c6d53;
   margin: 20px 0;
@@ -592,7 +592,7 @@ button, .passage a, input[type="submit"], .passage .macro-button {
 }
 
 .codex-scroll summary {
-  padding: 14px 18px;
+  padding: 28px 18px;
   font-size: 1.1em;
   font-weight: bold;
   color: #4a2511;
@@ -2240,12 +2240,12 @@ State.variables.triviaContent = picked.content;
   &lt;hr class=&quot;博物誌-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 20px;&quot;&gt;\
     &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
-  &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="ColdJokes" tags="" position="625,225" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;\
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;🕯️ 絕對零度牌 🕯️&lt;/h1&gt;\
-  &lt;p class=&quot;博物誌-subtitle&quot;&gt;✰ 默想你內心的混亂與煩躁，解封一張冰霜諧音冷魔導牌 ✰&lt;/p&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+  &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="ColdJokes" tags="" position="625,225" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
+&lt;h1 class=&quot;curiosity-title&quot;&gt;🕯️ 絕對零度牌 🕯️&lt;/h1&gt;\
+&lt;p class=&quot;curiosity-subtitle&quot;&gt;✰ 默想你內心的混亂與煩躁，解封一張冰霜諧音冷魔導牌 ✰&lt;/p&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
-    &lt;p&gt;「請在此閉上雙眼、心裡默想你此刻的煩躁，隨後點擊下方的卡牌。」&lt;/p&gt;&lt;/div&gt;\
+     &lt;p&gt;「請在此閉上雙眼、心裡默想你此刻的煩躁，隨後點擊下方的卡牌。」&lt;/p&gt;&lt;/div&gt;\
   &lt;!-- ── 互動占卜卡牌區域 ── --&gt;\
   &lt;div id=&quot;oracle-area&quot; style=&quot;text-align: center;&quot;&gt;\
     &lt;&lt;if $jokeList is undefined&gt;&gt;\
@@ -2291,19 +2291,19 @@ State.variables.triviaContent = picked.content;
         &lt;div class=&quot;card-face card-front&quot;&gt;
           &lt;div class=&quot;card-front-inner&quot;&gt;
             &lt;div style=&quot;font-size: 0.85em; color: #2b5c68; font-weight: bold; letter-spacing: 1px;&quot;&gt;❄️ 今日低溫麻醉藥 ❄️&lt;/div&gt;
-            &lt;div class=&quot;joke-text-box&quot;&gt;&lt;strong&gt;&lt;&lt;print $cardPicked&gt;&gt;&lt;/strong&gt;&lt;/div&gt;
+            &lt;div class=&quot;joke-text-box&quot;&gt;&lt;strong id=&quot;joke-content&quot;&gt;&lt;&lt;print $cardPicked&gt;&gt;&lt;/strong&gt;&lt;/div&gt;
             &lt;div style=&quot;font-size: 0.8em; color: #43717d;&quot;&gt;🧊 腦神經發炎指數已下降 4.2°C&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;\
     &lt;p style=&quot;font-size: 0.9em; color: #5c4033;&quot;&gt;👁️ 點擊卡牌即可流暢 180 度翻面！若想換一則笑話，請按下方洗牌按鈕。&lt;/p&gt;\
     &lt;div style=&quot;margin-top: 20px;&quot;&gt;\
       &lt;&lt;button &quot;🔮 洗牌重抽：重築低溫結界&quot;&gt;&gt;\
         &lt;&lt;set $cardPicked = $jokeList.random()&gt;&gt;\
-        &lt;&lt;replace &quot;#oracle-area&quot;&gt;&gt;\
-          &lt;&lt;include &quot;ColdJokes&quot;&gt;&gt;\
+          &lt;&lt;replace &quot;#joke-content&quot;&gt;&gt;\
+          &lt;&lt;print $cardPicked&gt;&gt;\
         &lt;&lt;/replace&gt;&gt;\
-      &lt;&lt;/button&gt;&gt;\
+        &lt;&lt;run $(&#39;#tarotCard&#39;).removeClass(&#39;flipped&#39;)&gt;&gt;&lt;&lt;/button&gt;&gt;\
     &lt;/div&gt;&lt;/div&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
-  &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 25px;&quot;&gt;
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
+  &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 25px;&quot;&gt;\
     &lt;&lt;link &quot;返回《博物誌目錄》&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="LabNecromancy" tags="" position="525,525" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;
