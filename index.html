@@ -186,7 +186,7 @@ html, body {
   max-height: none !important;
   overflow-y: visible !important;
   line-height: 1.8;
-  font-size: 1.05em;
+  font-size: clamp(0.9rem, 2.2vw, 1.05em) !important;
   writing-mode: horizontal-tb !important;
   word-break: break-word !important;
   white-space: normal !important;
@@ -228,6 +228,9 @@ button, .passage a, input[type="submit"], .passage .macro-button {
   padding: 10px 16px !important;
   margin: 8px auto !important;
   text-decoration: none !important;
+  white-space: nowrap !important;
+  word-break: normal !important;
+  font-size: clamp(0.75rem, 3.2vw, 1rem) !important;
   display: inline-block !important;
   transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.1s ease, background-color 0.2s ease !important;
 }
@@ -252,7 +255,7 @@ button, .passage a, input[type="submit"], .passage .macro-button {
 
 .curiosity-img {
   width: 100%;
-  max-width: 460px;
+  max-width: 430px;
   height: auto;
   border: 4px solid var(--circus-ink) !important;
   border-radius: 12px !important;
@@ -414,7 +417,7 @@ button, .passage a, input[type="submit"], .passage .macro-button {
   text-align: center !important;
   margin: 0 !important;
   padding: 12px 10px !important;
-  font-size: 0.95em !important;
+  font-size: 0.9em !important;
 }
 
 /* 讓最下方的「返回首頁」按鈕獨佔一行並置中 */
@@ -1307,7 +1310,7 @@ button, .passage a, input[type="submit"], .passage .macro-button {
 &lt;div class=&quot;menu-back&quot;&gt;\
   [[🏠 返回博物誌首頁-&gt;Start]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="DisasterChecklist" tags="" position="725,525" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;\
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;🛡️ 緊急應援與防災檢核室&lt;/h1&gt;\
+  &lt;div class=&quot;book-title&quot;&gt;🛡️ 緊急應援與防災檢核室&lt;/div&gt;\
   &lt;p class=&quot;博物誌-subtitle&quot;&gt;⁓ 模組化生存應急驗證與個人化防禦防線生成器 ⁓&lt;/p&gt;\
 &lt;hr class=&quot;博物誌-divider&quot;&gt;\
 &lt;div class=&quot;codex-intro-box&quot;&gt;\
@@ -1385,10 +1388,10 @@ button, .passage a, input[type="submit"], .passage .macro-button {
     &lt;div id=&quot;report-result&quot; style=&quot;margin-top: 15px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;\
   &lt;div class=&quot;nav-footer&quot;&gt;\
     &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
-  &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="AnxietyFirstAid" tags="" position="625,525" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;\
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;🌿 情緒應援急救箱&lt;/h1&gt;\
-  &lt;p class=&quot;博物誌-subtitle&quot;&gt;♥ 針對焦慮、認知過載與社交風暴的神經級生理/心理降溫指南 ♥&lt;/p&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+  &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="AnxietyFirstAid" tags="" position="625,525" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
+  &lt;div class=&quot;book-title&quot;&gt;🌿 情緒應援急救箱&lt;/div&gt;\
+  &lt;p class=&quot;curiosity-subtitle&quot;&gt;♥ 針對焦慮、認知過載與社交風暴的神經級生理/心理降溫指南 ♥&lt;/p&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
     &lt;p&gt;「當大腦杏仁核陷入暴走、心跳加速或腦袋被內耗塞爆時，理性思考往往會暫時斷線。打開這個急救箱，挑選一劑適合你當下症狀的神經處方與溫暖情緒應援。」&lt;/p&gt;\
   &lt;/div&gt;\
@@ -1482,14 +1485,14 @@ button, .passage a, input[type="submit"], .passage .macro-button {
       &lt;/div&gt;\
     &lt;/details&gt;\
   &lt;/div&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 20px;&quot;&gt;\
     &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
   &lt;/div&gt;\
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="MicroLearning" tags="" position="525,625" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;\
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;⏱️ 微型技能微學習&lt;/h1&gt;\
-  &lt;p class=&quot;博物誌-subtitle&quot;&gt;▶ 30 秒至 1 分鐘的黃金急救與生存古老秘法速解 ◀&lt;/p&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="MicroLearning" tags="" position="525,625" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
+  &lt;div class=&quot;book-title&quot;&gt;⏱️ 微型技能微學習&lt;/div&gt;\
+  &lt;p class=&quot;curiosity-subtitle&quot;&gt;▶ 30 秒至 1 分鐘的黃金急救與生存古老秘法速解 ◀&lt;/p&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
     &lt;p&gt;「在命運的深淵與突發危機降臨之前，知識是唯一的護身符。點擊下方各項古老魔導卷軸，解封能於黃金瞬間挽救生命的標準動作。」&lt;/p&gt;&lt;/div&gt;\
   &lt;div class=&quot;codex-section&quot;&gt;\
@@ -2010,7 +2013,7 @@ button, .passage a, input[type="submit"], .passage .macro-button {
           &lt;li&gt;✔️ &lt;strong&gt;阿斯匹靈（Aspirin）：&lt;/strong&gt;若患者無阿斯匹靈過敏及消化道出血史，可讓其「咀嚼嚼碎服用 160-325 mg Aspirin」以加速抗血小板吸收，並速撥打 999。&lt;/li&gt;\
         &lt;/ul&gt;&lt;/div&gt;&lt;/details&gt;\
   &lt;/div&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot;&gt;\
     &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
   &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="EverydayTrivia" tags="" position="725,625" size="100,100">&lt;div class=&quot;book-title&quot;&gt;✦ 👩🏻‍🏫 日常生活冷知識 ✦&lt;/div&gt;\
@@ -2031,10 +2034,10 @@ State.variables.triviaContent = picked.content;
 &lt;hr class=&quot;ticket-divider&quot;&gt;\
 &lt;div class=&quot;menu-back&quot; style=&quot;text-align: center; margin-top: 15px;&quot;&gt;\
   [[🔄 抽取另一則冷知識-&gt;EverydayTrivia]]\
-  [[🃏 瀏覽六大專區目錄-&gt;MenuHub]]\
+&lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\  
   [[🏠 返回博物誌首頁-&gt;Start]]\
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="PsychologyCodex" tags="" position="625,625" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;\
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;🧠 禁忌心理學與視覺錯覺博物誌&lt;/h1&gt;\
+  &lt;div class=&quot;book-title&quot;&gt;🧠 禁忌心理學與視覺錯覺博物誌&lt;/div&gt;\
   &lt;p class=&quot;博物誌-subtitle&quot;&gt;⿻ 窺探大腦認知盲區、神經詐欺與微表情解碼的古老秘典 ⿻&lt;/p&gt;\
   &lt;hr class=&quot;博物誌-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
@@ -2241,7 +2244,7 @@ State.variables.triviaContent = picked.content;
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 20px;&quot;&gt;\
     &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
   &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="ColdJokes" tags="" position="625,225" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
-&lt;h1 class=&quot;curiosity-title&quot;&gt;🕯️ 絕對零度牌 🕯️&lt;/h1&gt;\
+&lt;h1 class=&quot;curiosity-title&quot;&gt;🕯️ 絕對零度牌&lt;/h1&gt;\
 &lt;p class=&quot;curiosity-subtitle&quot;&gt;✰ 默想你內心的混亂與煩躁，解封一張冰霜諧音冷魔導牌 ✰&lt;/p&gt;\
   &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
@@ -2304,12 +2307,12 @@ State.variables.triviaContent = picked.content;
     &lt;/div&gt;&lt;/div&gt;\
   &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 25px;&quot;&gt;\
-    &lt;&lt;link &quot;返回《博物誌目錄》&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+    &lt;&lt;link &quot;前往《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
   &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="LabNecromancy" tags="" position="525,525" size="100,100">&lt;div class=&quot;博物誌-container&quot;&gt;
-  &lt;h1 class=&quot;博物誌-title&quot;&gt;⚗️ 煉金異常站 🔬&lt;/h1&gt;\
-  &lt;p class=&quot;博物誌-subtitle&quot;&gt;⁂ 臨床解咒：抽取異常報告與相應護理處置 ⁂&lt;/p&gt;\
-  &lt;hr class=&quot;博物誌-divider&quot;&gt;\
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="LabNecromancy" tags="" position="525,525" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
+  &lt;div class=&quot;book-title&quot;&gt;⚗️ 煉金異常站 🔬&lt;/div&gt;\
+  &lt;p class=&quot;curiosity-subtitle&quot;&gt;⁂ 臨床解咒：抽取異常報告與相應護理處置 ⁂&lt;/p&gt;\
+  &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;codex-intro-box&quot;&gt;\
     &lt;p&gt;「拉動煉金搖桿，隨機抽出一項失控的生化指標，解讀身體在暗夜發出的求救信號與臨床護理防禦術。」&lt;/p&gt;&lt;/div&gt;\
   &lt;!-- ── 🎰 老虎機主體 ── --&gt;\
@@ -2490,9 +2493,9 @@ State.variables.triviaContent = picked.content;
         &lt;li&gt;&lt;b&gt;甲狀腺功能減退 (High TSH)：&lt;/b&gt;代謝慢如烏龜，極度怕冷便秘。&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;甲狀腺功能亢進 (Low TSH)：&lt;/b&gt;代謝像跑車暴衝，怕熱心悸手震。&lt;/li&gt;
       &lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;\
-&lt;hr class=&quot;博物誌-divider&quot;&gt;\
+&lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 25px;&quot;&gt;\
-    &lt;&lt;link &quot;返回《博物誌目錄》&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
+    &lt;&lt;link &quot;返回《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
   &lt;/div&gt;&lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
