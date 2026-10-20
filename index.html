@@ -2253,56 +2253,33 @@ State.variables.triviaContent = picked.content;
   &lt;div id=&quot;oracle-area&quot; style=&quot;text-align: center;&quot;&gt;\
     &lt;&lt;if $jokeList is undefined&gt;&gt;\
       &lt;&lt;set $jokeList = [
-        &quot;【算命】一位男士去算命，算命師看了看他的手相，歎了口氣說：「你這輩子會非常貧窮，直到40歲……」男士聽到這裡眼前一亮，急忙問：「那40歲以後呢？我就會發財了嗎？！」算命師搖搖頭說：「不，40歲以後你就習慣了。」&quot;,
-        &quot;【減肥嘅真諦】
-        A：「我本身決定咗由尋日開始減肥！我想日日跑五公里！」
-        B：「咁你開始未呀？」
-        A：「我尋日去到樓下公園，見到有人喺度賣雞旦仔同炸雞扒，我就知我嘅運動生涯已經喺起跑線上完結咗。」&quot;,
-        &quot;【世界上最遙遠嘅距離】
-        A：「你覺得呢個世界上，最遙遠嘅距離係咩？」
-        B：「係生與死嘅距離？定係『我站在你面前，你卻不知道我愛你』？」
-        A：「錯！最遙遠嘅距離，係今朝早起身照鏡嗰陣，你問自己：『尋晚到底係咩驅使我放工嗰陣，同老闆講聽日見？』」&quot;,
-        &quot;【優惠例湯】個客去冰室食飯，食食吓發覺隻湯碗入面有一隻蚊，客：「阿姐！你睇吓！我碗湯入面有隻蚊呀！」
-        阿姐（行過嚟睇了一眼）：「先生，你叫呢碗係『$38 優惠例湯』，你唔係以為呢個價錢，我哋會送隻龍蝦畀你呀？」&quot;,
-        &quot;【神奇嘅魔法】
-        A：「你覺得世界上最厲害嘅魔法係咩？」
-        B：「係『隱形術』？定係『飛天』？」
-        A：「錯！係『公司嘅自動門』！只要我一踏入去，我嘅快樂、人體精力同埋尊嚴，就會喺 0.1 秒內自動消失得無影無蹤！」&quot;,
-        &quot;【交通意外】
-        問：「咩水果喺路上最容易發生交通意外？」
-        答：「係蕉！因為『蕉』急過馬路！」&quot;,
-        &quot;【年薪】「你年薪百萬嗎？」「不，但我會自主呼吸，且目前在世。」&quot;,
-        &quot;【記憶力】神給了我兩個選擇：長得好看，或者記憶力好。我都忘了我選了哪一個，但我記得我長得很帥。&quot;,
-        &quot;【保養品】
-        「這款保養品主打無瑕、抗老、回春，擦完真的有感嗎？」
-        「有啊，擦完口袋乾乾淨淨，人生頓時少了很多雜念。」&quot;,
-        &quot;【藥效】
-        醫生：「這顆藥每天吃一次，如果沒有效果，就證明你沒吃。」
-病人：「那如果有效果呢？」
-醫生：「那就證明你吃了。」&quot;,
-        &quot;【打字機的煩惱】鍵盤上哪一個鍵最寂寞？...答案是「Space（空白鍵）」，因為它總是獨自留白。&quot;,
-        &quot;【高科技水果】什麼水果最懂網際網路？...答案是「蘋果」，因為它天生自帶 iOS！&quot;,
-        &quot;【最禮貌的動物】哪種動物見到人最喜歡打招呼？...答案是「羊」，因為牠總是「咩～（May I help you?）」！&quot;,
-        &quot;【躺平】「你怎麼看待現在年輕人流行躺平？」
-        「我不只躺平，我還側臥，這樣方便滑手機。」&quot;,
-        &quot;【存錢】「大師，為什麼我總是存不到錢？」
-        「因為你把『活在當下』誤解成了『及時行樂』，把『順其自然』誤解成了『能花就花』。」&quot;,
-        &quot;【愛情的保鮮期 】「你覺得愛情的保鮮期有多久？」
-        「看情況，有的到結婚，有的到看到對方手機密碼。」&quot;,
-        &quot;【心無旁騖】「大師，如何才能做到心無旁騖？」
-        「把你手機電量用到只剩 1%。」&quot;,
-        &quot;【神奇的字】「這世界上最神奇的兩個字是什麼？」
-        「『算了』。只要講出來，90% 的難題瞬間解決。」&quot;,
-        &quot;【爬山】「為什麼你每次失戀都要跑去爬山？」
-        「因為只有山頂的風，能吹走我腦子裡進的水。」&quot;,
-        &quot;【老了以後】「你想過老了以後要幹嘛嗎？」
-        「想過啊，等我老了，我就去給年輕人當『負面教材』。」&quot;
-      ]&gt;&gt;&lt;&lt;/if&gt;&gt;\
+        &quot;【算命】&lt;br&gt;一位男士去算命，算命師看了看他的手相，歎了口氣說：「你這輩子會非常貧窮，直到40歲……」男士聽到這裡眼前一亮，急忙問：「那40歲以後呢？我就會發財了嗎？！」算命師搖搖頭說：「不，40歲以後你就習慣了。」&quot;,
+        &quot;【減肥嘅真諦】&lt;br&gt;🐷：「我本身決定咗由尋日開始減肥！我想日日跑五公里！」🐶：「咁你開始未呀？」🐷：「我尋日去到樓下公園，見到有人喺度賣雞旦仔同燒賣，我就知我嘅運動生涯已經喺起跑線上完結咗。」&quot;,
+        &quot;【世界上最遙遠嘅距離】&lt;br&gt;🐵：「你覺得呢個世界上，最遙遠嘅距離係咩？」🐷：「係生與死嘅距離？」🙉：「錯！係今朝早起身照鏡嗰陣，你問自己：『尋晚到底係咩驅使我放工嗰陣，同老闆講聽日見？』」&quot;,
+        &quot;【優惠例湯】&lt;br&gt;個客去冰室食飯，食食吓發覺隻湯碗入面有一隻蚊，🫨：「我碗湯入面有隻蚊呀！」🧑🏼‍🍳：「先生，你叫呢碗係『$38 優惠例湯』，你唔係以為呢個價錢，我哋會送隻龍蝦畀你呀？」&quot;,
+        &quot;【神奇嘅魔法】&lt;br&gt;🤵🏻‍♂️：「你覺得世界上最厲害嘅魔法係咩？」🥷🏻：「係『隱形術』？定係『飛天』？」🤵🏻‍♂️：「錯！係『公司嘅門』！只要我一踏入去，我嘅快樂、人體精力同埋尊嚴，就會自動消失得無影無蹤！」&quot;,
+        &quot;【交通意外】&lt;br&gt;「咩水果喺路上最容易發生交通意外？」「係蕉！因為『蕉』急過馬路！」&quot;,
+        &quot;【年薪】&lt;br&gt;「你身高1米8、 年薪過百萬嗎？」「不，但我會自主呼吸，且目前在世。」&quot;,
+        &quot;【記憶力】&lt;br&gt;神給了我兩個選擇：長得好看，或者記憶力好。我都忘了我選了哪一個，但我記得我長得很帥。&quot;,
+        &quot;【保養品】&lt;br&gt;這款保養品主打無瑕、抗老、回春，擦完真的有感嗎？」「有啊，擦完口袋乾乾淨淨，人生頓時少了很多雜念。」&quot;,
+        &quot;【藥效】&lt;br&gt;醫生：「這顆藥每天吃一次，如果沒有效果，就證明你沒吃。」病人：「那如果有效果呢？」醫生：「那就證明你吃了。」&quot;,
+        &quot;【打字機的煩惱】&lt;br&gt;鍵盤上哪一個鍵最寂寞？...答案是「Space（空白鍵）」，因為它總是獨自留白。&quot;,
+        &quot;【高科技水果】&lt;br&gt;什麼水果最懂網際網路？...答案是「蘋果」，因為它天生自帶 iOS！&quot;,
+        &quot;【最禮貌的動物】&lt;br&gt;哪種動物見到人最喜歡打招呼？...答案是「羊」，因為牠總是「咩～（May I help you?）」！&quot;,
+        &quot;【躺平】&lt;br&gt;「你怎麼看待現在年輕人流行躺平？」「我不只躺平，我還側臥，這樣方便滑手機。」&quot;,
+        &quot;【存錢】&lt;br&gt;「大師，為什麼我總是存不到錢？」「因為你把『活在當下』誤解成了『及時行樂』，把『順其自然』誤解成了『能花就花』。」&quot;,
+        &quot;【愛情的保鮮期 】&lt;br&gt;「你覺得愛情的保鮮期有多久？」「看情況，有的到結婚，有的到看到對方手機密碼。」&quot;,
+        &quot;【心無旁騖】&lt;br&gt;「大師，如何才能做到心無旁騖？」「把你手機電量用到只剩 1%。」&quot;,
+        &quot;【神奇的字】&lt;br&gt;「這世界上最神奇的兩個字是什麼？」「『算了』。只要講出來，90% 的難題瞬間解決。」&quot;,
+        &quot;【爬山】&lt;br&gt;「為什麼你每次失戀都要跑去爬山？」「因為只有山頂的風，能吹走我腦子裡進的水。」&quot;,
+        &quot;【老了以後】&lt;br&gt;「你想過老了以後要幹嘛嗎？」「想過啊，等我老了，我就去給年輕人當『負面教材』。」&quot;
+      ]&gt;&gt;
+    &lt;&lt;/if&gt;&gt;\
     &lt;&lt;if $cardPicked is undefined&gt;&gt;&lt;&lt;set $cardPicked = $jokeList.random()&gt;&gt;&lt;&lt;/if&gt;&gt;\
     &lt;!-- 3D 占卜卡片 --&gt;\
     &lt;div class=&quot;card-oracle-container&quot;&gt;\
-      &lt;div id=&quot;tarotCard&quot; class=&quot;tarot-card&quot; onclick=&quot;$(this).toggleClass(&#39;flipped&#39;)&quot;&gt;\
-        &lt;!-- 卡牌背面 (黑金魔陣) --&gt;\
+      &lt;div id=&quot;tarotCard&quot; class=&quot;tarot-card&quot; onclick=&quot;$(this).toggleClass(&#39;flipped&#39;)&quot;&gt;
+        &lt;!-- 卡牌背面 (黑金魔陣) --&gt;
         &lt;div class=&quot;card-face card-back&quot;&gt;
           &lt;div class=&quot;card-back-inner&quot;&gt;
             &lt;div style=&quot;font-size: 0.8em; letter-spacing: 3px; color: #c9a054;&quot;&gt;✦ NO.01 COLD ORACLE ✦&lt;/div&gt;
@@ -2310,28 +2287,33 @@ State.variables.triviaContent = picked.content;
             &lt;div&gt;
               &lt;div style=&quot;font-weight: bold; letter-spacing: 2px; color: #f2e3c6; font-size: 1.1em;&quot;&gt;低溫解毒牌&lt;/div&gt;
               &lt;div style=&quot;font-size: 0.78em; margin-top: 8px; color: #a89068; font-family: serif;&quot;&gt;「觸摸卡牌」&lt;/div&gt;\
-            &lt;div style=&quot;font-size: 0.8em; color: #c9a054;&quot;&gt;☾ 🜔 ☉ 🜏 ☽&lt;/div&gt;
-          &lt;/div&gt;
+              &lt;div style=&quot;font-size: 0.8em; color: #c9a054;&quot;&gt;☾ 🜔 ☉ 🜏 ☽&lt;/div&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;!-- 卡牌正面 (顯示笑話) --&gt;
+        &lt;!-- 卡牌正面 (顯示笑話) --&gt;\
         &lt;div class=&quot;card-face card-front&quot;&gt;
           &lt;div class=&quot;card-front-inner&quot;&gt;
-            &lt;div style=&quot;font-size: 0.85em; color: #2b5c68; font-weight: bold; letter-spacing: 1px;&quot;&gt;❄️ 今日低溫麻醉藥 ❄️&lt;/div&gt;
-            &lt;div class=&quot;joke-text-box&quot;&gt;&lt;strong id=&quot;joke-content&quot;&gt;&lt;&lt;print $cardPicked&gt;&gt;&lt;/strong&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-size: 0.8em; color: #43717d;&quot;&gt;🧊 腦神經發炎指數已下降 4.2°C&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;\
+            &lt;div style=&quot;font-size: 0.85em; color: #2b5c68; font-weight: bold; letter-spacing: 1px;&quot;&gt;❄️ 今日低溫麻醉藥 ❄️&lt;/div&gt;\
+            &lt;div class=&quot;joke-text-box&quot;&gt;&lt;strong id=&quot;joke-content&quot;&gt;&lt;&lt;print $cardPicked&gt;&gt;&lt;/strong&gt;&lt;/div&gt;\
+            &lt;div style=&quot;font-size: 0.8em; color: #43717d;&quot;&gt;🧊 腦神經發炎指數已下降 4.2°C&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
     &lt;p style=&quot;font-size: 0.9em; color: #5c4033;&quot;&gt;👁️ 點擊卡牌即可流暢 180 度翻面！若想換一則笑話，請按下方洗牌按鈕。&lt;/p&gt;\
     &lt;div style=&quot;margin-top: 20px;&quot;&gt;\
       &lt;&lt;button &quot;🔮 洗牌重抽：重築低溫結界&quot;&gt;&gt;\
-        &lt;&lt;set $cardPicked = $jokeList.random()&gt;&gt;\
-          &lt;&lt;replace &quot;#joke-content&quot;&gt;&gt;\
-          &lt;&lt;print $cardPicked&gt;&gt;\
-        &lt;&lt;/replace&gt;&gt;\
-        &lt;&lt;run $(&#39;#tarotCard&#39;).removeClass(&#39;flipped&#39;)&gt;&gt;&lt;&lt;/button&gt;&gt;\
+        &lt;&lt;set $cardPicked = $jokeList.random()&gt;&gt;
+        &lt;&lt;replace &quot;#joke-content&quot;&gt;&gt;
+          &lt;&lt;print $cardPicked&gt;&gt;
+        &lt;&lt;/replace&gt;&gt;
+        &lt;&lt;run $(&#39;#tarotCard&#39;).removeClass(&#39;flipped&#39;)&gt;&gt;
+      &lt;&lt;/button&gt;&gt;
     &lt;/div&gt;&lt;/div&gt;\
   &lt;hr class=&quot;curiosity-divider&quot;&gt;\
   &lt;div class=&quot;nav-footer&quot; style=&quot;text-align: center; margin-top: 25px;&quot;&gt;\
-    &lt;&lt;link &quot;前往《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;\
+    &lt;&lt;link &quot;前往《怪奇日常生存與急救博物誌》大廳&quot; &quot;MenuHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="LabNecromancy" tags="" position="525,525" size="100,100">&lt;div class=&quot;curiosity-container&quot;&gt;\
   &lt;div class=&quot;book-title&quot;&gt;⚗️ 煉金異常站 🔬&lt;/div&gt;\
